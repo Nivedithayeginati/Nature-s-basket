@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script>
+        // Script to add 'active' class to the current link
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLocation = location.href;
+            const menuItem = document.querySelectorAll('nav ul li a');
+            const menuLength = menuItem.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === currentLocation) {
+                    menuItem[i].className = 'active';
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="manageinventory.html">Orchard Collection</a></li>
+                <li><a href="analytics.html">Data Analytics</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background-image">
+            <h1>Step into Nature's Basket,<br> where every product is picked just for you!</h1>
+            <p>Find fresh organic produce, daily essentials, and more!</p>
+            <a href="manageinventory.html" class="get-started-button">Shop Fresh</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nature's Basket</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/analytics2.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-image: url('../Images/fruits.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: rgb(251, 247, 247);
+    padding: 36px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #f7f3f3;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #f7f4f4;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.chart-card {
+    margin: 2rem auto;
+    width: 40%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: none;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.credibility {
+    margin: 2rem auto;
+    width: 60%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: none;
+
+}
+
+footer {
+    background-color: none;
+    color: #000;
+    text-align: center;
+    padding: 2rem 0;
+}

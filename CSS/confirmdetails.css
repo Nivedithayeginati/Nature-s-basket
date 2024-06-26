@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('../Images/customerdetials.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-image: url('../Images/fruits.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: rgb(251, 247, 247);
+    padding: 6px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#customerDetails, #cartDetails {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#customerDetails {
+    width: 40%; 
+}
+
+#customerDetails h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#cartDetails h2 {
+    text-align: center; 
+}
+
+#editButton {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#editButton:hover {
+    background-color: #e6b800;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+.small-button {
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.2rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.go-back {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.proceed {
+    background-color: #ffcc00;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}

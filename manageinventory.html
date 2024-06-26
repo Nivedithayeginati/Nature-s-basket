@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="CSS/manageinventory.css">
+    <script src="JS/manageinventory.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="manageinventory.html" class="active">Orchard Collection</a></li>
+                <li><a href="analytics.html">Data Analytics</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="categories-container">
+                <h2>Shop by Category</h2>
+                <div class="categories">
+                    <button onclick="showCategory('fruits')">Fruits</button>
+                    <button onclick="showCategory('vegetables')">Vegetables</button>
+                    <button onclick="showCategory('bakedGoods')">Baked Goods</button>
+                    <button onclick="showCategory('milkAndMeat')">Milk and Meat Products</button>
+                </div>
+            </div>
+            <div class="products" id="productList"></div>
+            <div class="cart">
+                <h2>Shopping Cart</h2>
+                <ul id="cartList"></ul>
+                <p>Total: $<span id="totalPrice">0.00</span></p>
+                <button id="checkoutButton">Confirm Your Harvest</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nature's Basket</p>
+    </footer>
+</body>
+</html>

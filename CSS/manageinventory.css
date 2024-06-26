@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    background-image: url('../Images/manageinventory.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('../Images/fruits.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: rgb(251, 247, 247);
+    padding: 36px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fcfbf9;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.categories-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.categories-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.categories button {
+    padding: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px; 
+}
+
+.categories button:hover,
+.categories button.active {
+    background-color: #218838;
+}
+
+.products {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1rem;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column; 
+}
+
+.product-item img {
+    width: 195px;
+    height: 150px;
+    margin-bottom: 1rem; 
+}
+
+.product-details {
+    text-align: center;
+}
+
+.product-details span {
+    display: block;
+}
+
+.product-details .product-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.product-details .product-price {
+    margin-bottom: 1rem;
+}
+
+.product-item button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #0056b3;
+}
+
+.product-quantity select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+}
+
+.cart {
+    width: 30%;
+    background-image: url('../Images/cart.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 100px; 
+    max-height: 60vh;
+    overflow-y: auto; 
+}
+
+.cart h2 {
+    margin-top: 0;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-item-name, .cart-item-price {
+    flex: 1;
+}
+
+.cart-item-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cart ul li button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+}
+
+.cart ul li button:hover {
+    background-color: #0056b3;
+}
+
+#checkoutButton {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#checkoutButton:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}

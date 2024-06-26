@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <link rel="stylesheet" href="CSS/reviews.css">
+    <script src="JS/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="manageinventory.html">Manage Inventory</a></li>
+                <li><a href="analytics.html">Data Analytics</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Customer Reviews</h1>
+        <section id="existingReviews">
+            <h2>What our customers say</h2>
+            <div id="reviewsList"></div>
+        </section>
+        <h2>We would love your feedback. Please leave a review below:</h2>
+        <section id="submitReview" class="right-align">
+            <div>
+                <form id="reviewForm" class="form-card">
+                    <label for="reviewerName">Name:</label>
+                    <input type="text" id="reviewerName" name="reviewerName" required>
+                    <label for="reviewText">Review:</label>
+                    <textarea id="reviewText" name="reviewText" required></textarea>
+                    <label for="rating">Rating:</label>
+                    <div class="star-rating">
+                        <span class="star" data-value="5">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="1">&#9733;</span>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" required>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nature's Basket</p>
+    </footer>
+</body>
+</html>

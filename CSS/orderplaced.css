@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('../Images/orderplaced.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.order-placed-container {
+    text-align: center;
+}
+
+.order-placed-message {
+    font-size: 3rem; 
+    font-weight: bold;
+    color: black; 
+    animation: flyIn 2s ease-in-out;
+}
+
+@keyframes flyIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

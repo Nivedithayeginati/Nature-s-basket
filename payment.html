@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="CSS/payment.css">
+    <script src="JS/payment.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="manageinventory.html">Manage Inventory</a></li>
+                <li><a href="analytics.html">Data Analytics</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Payment Options</h1>
+        <form id="paymentForm">
+            <div class="payment-option">
+                <input type="radio" id="paypal" name="paymentMethod" value="PayPal" required>
+                <label for="paypal">PayPal</label>
+                <img src="Images/paypal.jpg" alt="PayPal">
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="NetBanking" name="paymentMethod" value="Net Banking">
+                <label for="NetBanking">Net Banking</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="creditCard" name="paymentMethod" value="Credit Card">
+                <label for="creditCard">Credit Card</label>
+                <img src="Images/creditcard.jpg" alt="Credit Card">
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="debitCard" name="paymentMethod" value="Debit Card">
+                <label for="debitCard">Debit Card</label>
+                <img src="Images/debitcard.jpg" alt="Debit Card">
+            </div>
+            <div class="button-container">
+                <button type="button" id="backToConfirmButton">Back to Confirm Details</button>
+                <button type="submit">Proceed with Payment</button>
+            </div>
+        </form>
+        <div id="paymentSuccess" class="hidden">
+            <h2>Payment Successful!</h2>
+        </div>
+    </main>
+    <footer>
+       
+        <p>&copy; 2024 Nature's Basket</p>
+       
+    </footer>
+</body>
+</html>
